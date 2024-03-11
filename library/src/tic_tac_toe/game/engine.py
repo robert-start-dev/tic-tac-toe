@@ -29,7 +29,7 @@ class TicTacToe:
         game_state = GameState(Grid(), starting_mark)
         while True:
             self.renderer.render(game_state)
-            if  game_state.game_over:  #check this against code tutorial
+            if  game_state.game_over:  
                 break
             player = self.get_current_player(game_state)
             try:
